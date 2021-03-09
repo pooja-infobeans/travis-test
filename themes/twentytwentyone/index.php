@@ -16,6 +16,9 @@
 
 get_header();
 
+echo "All Posts";
+echo "<br>";
+
 if ( have_posts() ) {
 
 	// Load posts loop.
