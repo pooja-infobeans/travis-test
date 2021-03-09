@@ -16,10 +16,14 @@
 
 get_header();
 
+echo "All Posts";
+echo "<br>";
+
 if ( have_posts() ) {
 
 	// Load posts loop.
 	while ( have_posts() ) {
+		echo "this is for testing";
 		the_post();
 
 		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
